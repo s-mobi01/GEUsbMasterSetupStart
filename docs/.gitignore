@@ -1,0 +1,7 @@
+/work
+/doc
+/node_modules
+/book.pdf
+/book.epub
+/book.mobi
+*.bak

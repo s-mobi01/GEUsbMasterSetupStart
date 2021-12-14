@@ -1,0 +1,406 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.USB Masterモジュールの起動 · Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro-kui/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chpt0600.html" />
+    
+    
+    <link rel="prev" href="chpt0400.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chpt0000.html">
+            
+                <a href="chpt0000.html">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chpt0100.html">
+            
+                <a href="chpt0100.html">
+            
+                    
+                    1.概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chpt0200.html">
+            
+                <a href="chpt0200.html">
+            
+                    
+                    2.前提条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chpt0300.html">
+            
+                <a href="chpt0300.html">
+            
+                    
+                    3.ドライバの用意
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chpt0400.html">
+            
+                <a href="chpt0400.html">
+            
+                    
+                    4.USB Masterモジュール用リポジトリのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="chpt0500.html">
+            
+                <a href="chpt0500.html">
+            
+                    
+                    5.USB Masterモジュールの起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chpt0600.html">
+            
+                <a href="chpt0600.html">
+            
+                    
+                    6.USB Masterモジュールの実行結果
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >5.USB Masterモジュールの起動</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="5usb-master-&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x8D77;&#x52D5;">5.USB Master &#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x8D77;&#x52D5;</h1>
+<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#xFF08;&#x4F8B;&#xFF09;&#x3092;&#x4EE5;&#x4E0B;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3002;</p>
+<p>&#x203B;&#x5B9F;&#x884C;&#x524D;&#x306B;Synerex Server&#x304A;&#x3088;&#x3073;&#x3001;Synerex Node Server&#x304C;&#x7A3C;&#x50CD;&#x3057;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3002;</p>
+<pre><code>$ cd usb_grideye
+$ ./usb_grideye -verbose -nodesrv 192.168.207.165:9990 -netifname &#x30A4;&#x30FC;&#x30B5;&#x30CD;&#x30C3;&#x30C8;
+</code></pre><p>  <strong>&#x5B9F;&#x884C;&#x6642;&#x306B;&#x30C9;&#x30E9;&#x30A4;&#x30D0;&#x306E;&#x30ED;&#x30FC;&#x30C9;&#x3067;&#x30A8;&#x30E9;&#x30FC;&#x306B;&#x306A;&#x308B;&#x5834;&#x5408;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;</strong>&#x3002;&#x6570;&#x56DE;&#x5B9F;&#x884C;&#x30EA;&#x30C8;&#x30E9;&#x30A4;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x5BFE;&#x5FDC;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#xFF08;&#x4EEE;&#x5BFE;&#x5FDC;&#x7B56;&#xFF09;</p>
+<h2 id="&#x30D1;&#x30E9;&#x30E1;&#x30BF;">&#x30D1;&#x30E9;&#x30E1;&#x30BF;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">#</th>
+<th>&#x30D1;&#x30E9;&#x30E1;&#x30BF;</th>
+<th>&#x5185;&#x5BB9;</th>
+<th>&#x8A18;&#x8FF0;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td>nodesrv</td>
+<td>Node ID Server&#x306E;URL</td>
+<td>-nodesrv 127.0.0.1:9990</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td>rvs_pxl</td>
+<td>&#x30D4;&#x30AF;&#x30BB;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x9006;&#x9806;&#xFF08;&#x5929;&#x5730;&#x9006;&#xFF09;&#x306B;&#x30BB;&#x30C3;&#x30C8;</td>
+<td>-rvs_pxl</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td>use_hi_pxl</td>
+<td>High&#x5074;&#x30D4;&#x30AF;&#x30BB;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#xFF08;&#x4E0A;&#x4F4D;&#x6841;&#x30C7;&#x30FC;&#x30BF;&#xFF09;&#x5229;&#x7528;</td>
+<td>-use_hi_pxl</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td>i2c_list</td>
+<td>I2C&#x30C7;&#x30D0;&#x30A4;&#x30B9;&#x4E00;&#x89A7;&#x8868;&#x793A;</td>
+<td>-i2c_list</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td>verbose</td>
+<td>&#x97F3;&#x58F0;&#x30C7;&#x30FC;&#x30BF;&#x5185;&#x5BB9;&#x306E;&#x8868;&#x793A;&#x8981;&#x5426;</td>
+<td>-verbose</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td>nosend</td>
+<td>Synerex&#x9023;&#x643A;&#x3057;&#x306A;&#x3044;</td>
+<td>-nosend</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td>su_pass</td>
+<td>su&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#xFF08;ubuntu&#x306E;&#x5834;&#x5408;&#x306E;&#x307F;&#x8981;&#x6307;&#x5B9A;&#x203B;&#xFF09;</td>
+<td>-su_pass hoge</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td>netifname</td>
+<td>&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x30A4;&#x30F3;&#x30BF;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x540D;<br>&#x8A2D;&#x5B9A;&#x5185;&#x5BB9;&#x306E;&#x8ABF;&#x3079;&#x65B9;&#x306F;<br>ubuntu&#x306E;&#x5834;&#x5408;&#xFF1A;&gt;ifconfig<br> windows&#x306E;&#x5834;&#x5408;&#xFF1A;&gt;netsh interface ip show interface</td>
+<td>-netifname wlan0</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td>location</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td>local_snrx</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p> &#x203B;blacklist&#x306B;&#x30C9;&#x30E9;&#x30A4;&#x30D0;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3082;&#x5BFE;&#x5FDC;&#x53EF;&#x80FD;&#x3067;&#x3042;&#x308B;&#x304C;&#x3001;&#x8AAC;&#x660E;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x7701;&#x7565;</p>
+<h2 id="&#x5099;&#x8003;">&#x5099;&#x8003;</h2>
+<h3 id="synerex-server&#x8D77;&#x52D5;&#x4F8B;">Synerex Server&#x8D77;&#x52D5;&#x4F8B;</h3>
+<pre><code>./synerex-server --servaddr 192.168.207.165 -nodeaddr 192.168.207.165
+</code></pre><h3 id="synerex-node-server&#x8D77;&#x52D5;&#x4F8B;">Synerex Node Server&#x8D77;&#x52D5;&#x4F8B;</h3>
+<pre><code>./nodeserv --addr 192.168.207.165
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chpt0400.html" class="navigation navigation-prev " aria-label="Previous page: 4.USB Masterモジュール用リポジトリのインストール">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chpt0600.html" class="navigation navigation-next " aria-label="Next page: 6.USB Masterモジュールの実行結果">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.USB Masterモジュールの起動","level":"1.7","depth":1,"next":{"title":"6.USB Masterモジュールの実行結果","level":"1.8","depth":1,"path":"src/md/chpt0600.md","ref":"src/md/chpt0600.md","articles":[]},"previous":{"title":"4.USB Masterモジュール用リポジトリのインストール","level":"1.6","depth":1,"path":"src/md/chpt0400.md","ref":"src/md/chpt0400.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-sharing","-lunr","-search","search-pro-kui","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-published-with":{},"search-pro-kui":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":24,"bottom":24},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Grid-EYE Syetem Pulse Audio Module How to Setup and Start Document","language":"ja","gitbook":"*","description":""},"file":{"path":"src/md/chpt0500.md","mtime":"2021-12-14T05:21:21.174Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T06:54:32.867Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro-kui/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro-kui/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
