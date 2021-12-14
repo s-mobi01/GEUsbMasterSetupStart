@@ -1,3 +1,3 @@
  # GitBook
-GitBookサイト（URL: [https://s-mobi01.github.io/GEUsbMasterSteupStart/](https://s-mobi01.github.io/GEUsbMasterSteupStart/)）へジャンプ
+GitBookサイト（URL: [https://s-mobi01.github.io/GEUsbMasterSetupStart/](https://s-mobi01.github.io/GEUsbMasterSetupStart/)）へジャンプ
 
